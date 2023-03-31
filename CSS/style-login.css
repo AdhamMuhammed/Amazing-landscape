@@ -1,0 +1,28 @@
+body {
+	background-image: url("../images/deadtrees.jpg");
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	font-size: 35px;
+	font-family: 'Caveat brush', cursive;
+	direction: ltr;
+}
+
+form[name=register] {
+	text-align: center;
+}
+
+.register {
+	text-align: center;
+	width: 50%;
+	margin: auto;
+}
+
+form .input-size {
+	padding: 12px;
+	margin: 3px;
+}
+
+input {
+	padding: 12px;
+	margin: 3px
+}
