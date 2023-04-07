@@ -12,6 +12,10 @@ body {
 	direction: ltr;
 }
 
+::selection {
+	background-color: darkviolet;
+}
+
 .nav {
 	overflow: hidden;
 	background-color: #333;
