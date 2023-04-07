@@ -1,5 +1,6 @@
 body {
-	background-image: url("../images/deadtrees.jpg");
+	/* background-image: url("../images/deadtrees.jpg"); */
+	background-color: #e0e6e6;
 	background-attachment: fixed;
 	background-size: 100% 100%;
 	font-size: 35px;
