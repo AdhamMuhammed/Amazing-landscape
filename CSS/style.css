@@ -16,7 +16,7 @@ body {
 	overflow: hidden;
 	background-color: #333;
 	position: absolute;
-	padding: 2px;
+	padding: 10px;
 	left: 0px;
 	right: 0px;
 	top: 0px;
@@ -31,7 +31,7 @@ body {
 	text-align: center;
 	padding: 15px 20px;
 	text-decoration: none;
-	margin-left: 3px;
+	margin-left: 2px;
 }
 
 .a:hover , .float-right:hover {
