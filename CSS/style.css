@@ -223,6 +223,10 @@ textarea {
 	display: block;
 }
 
+.center-after::first-letter {
+	font-weight: bold;
+}
+
 .opinion-descripe {
 	text-align: center;
 }
@@ -242,8 +246,8 @@ textarea {
 
 /* this is a pseudo element with two colons */
 
-.copyright::first-letter {
-	font-weight: bold;
+.copyright::first-line {
+	color: #FFFFFF;
 }
 
 .input-size {
