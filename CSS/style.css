@@ -34,6 +34,8 @@ body {
 	margin-left: 2px;
 }
 
+/* this is a pseudo class with one colon */
+
 .a:hover , .float-right:hover {
 	background-color: #25d366;
 }
@@ -223,8 +225,21 @@ textarea {
 
 .copyright {
 	font-size: 25px;
+	margin: 2px;
 	display: block;
-	text-align: center
+	text-align: center;
+	background-color: #333;
+	position: absolute;
+	padding: 10px;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+}
+
+/* this is a pseudo element with two colons */
+
+.copyright::first-letter {
+	font-weight: bold;
 }
 
 .input-size {
