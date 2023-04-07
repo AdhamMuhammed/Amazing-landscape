@@ -231,7 +231,7 @@ textarea {
 	text-align: center;
 }
 
-.Copyright {
+.copyright {
 	color: white;
     font-size: 25px;
     display: block;
@@ -246,7 +246,7 @@ textarea {
 
 /* this is a pseudo element with two colons */
 
-.Copyright::first-line {
+.copyright::first-line {
 	color: white;
 }
 
