@@ -3,6 +3,12 @@
 padding bt3ml ham4 mn ey geha Top right bottom left
 CTRL K C = Comment */
 
+html {
+	background-color: #B7B7B7;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
 body {
 	background-color: #B7B7B7;
 	background-attachment: fixed;
@@ -12,9 +18,9 @@ body {
 	direction: ltr;
 }
 
-::selection {
-	background-color: darkviolet;
-}
+/* ::selection {
+	background-color: darkviolet
+} */
 
 .nav {
 	overflow: hidden;
@@ -221,6 +227,7 @@ textarea {
 	padding: 10px;
 	font-size: 35px;
 	display: block;
+	position: relative;
 }
 
 .center-after::first-letter {
@@ -287,4 +294,15 @@ a, span, .footer, .social-text, div, .imgg {
 
 .wl:checked + label {
 	color: red
+}
+
+.center-after::before {
+	content: "";
+    position: absolute;
+	text-align: center;
+    top: 40%;
+    margin-top: -5px;
+	border-style: solid;
+    border-width: 15px;
+    border-color: transparent green transparent transparent;
 }
