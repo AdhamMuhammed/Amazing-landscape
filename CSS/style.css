@@ -243,6 +243,12 @@ textarea {
     padding: 8px;
 }
 
+.copyright::before {
+	content: "";
+	width: 10px;
+	height: 10px;
+}
+
 /* this is a pseudo element with two colons */
 
 .copyright::first-line {
