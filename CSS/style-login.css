@@ -84,7 +84,7 @@ td {
     margin-top: -5px;
 	border-style: solid;
     border-width: 15px;
-    border-color: transparent blue transparent transparent;
+    border-color: transparent #696969 transparent transparent;
 }
 
 .arrow::after {
@@ -94,5 +94,24 @@ td {
     height: 70%;
     right: 25px;
     top: 15%;
-    background-color: blue
+    background-color: #696969
+}
+
+legend {
+	margin: 2.5px
+}
+
+.fa-regular, .far {
+    font-weight: 500;
+    padding: 35px;
+    margin: 0px;
+    border-style: solid;
+	border-width: 5px;
+    border-radius: 50%;
+    border-color: #696969;
+}
+
+.fa-user {
+	color: #696969;
+	font-size: 63px;
 }
