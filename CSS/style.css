@@ -300,7 +300,7 @@ a, span, .footer, .social-text, div, .imgg {
 	text-align: center;
 }
 
-.agg {
+.agg , .nbb , .wll {
     background-color: #696969;
     border: 0px solid #696969;
     border-radius: 30px;
