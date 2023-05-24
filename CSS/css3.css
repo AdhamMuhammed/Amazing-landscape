@@ -1,0 +1,63 @@
+body {
+	background-color: #B7B7B7;
+	font-family: 'Roboto', sans-serif;
+	direction: ltr;
+}
+
+input[type=text],input[type=password] {
+	width: 65%;
+	margin: 10px;
+	padding: 12px 5px;
+	margin: 8px 0px;
+	border: 1px solid #ccc;
+	background-color: #b7b7b7;
+	border-color: transparent transparent #333 transparent;
+}
+
+input[type=submit] {
+	width: 70%;
+	margin: 12px;
+	padding: 12px 20px;
+	background-color: #6f9eed;
+	border-color: transparent;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
+.fa-brands {
+	font-size: 22px;
+	padding: 4px;
+	margin: 9px;
+}
+
+.register {
+	text-align: center;
+	width: 70%;
+	margin: auto;
+	padding: 40px 0;
+}	
+
+fieldset {
+	border-radius: 8px;	
+	width: 50%;
+	margin: auto;
+}
+
+legend {
+	margin: 2.5px
+}
+
+.fa-regular {
+    font-weight: 500;
+    padding: 30px;
+    margin: 0px;
+    border-style: solid;
+	border-width: 2px;
+    border-radius: 50%;
+    border-color: #696969;
+}
+
+.fa-user {
+	color: #696969;
+	font-size: 40px;
+}

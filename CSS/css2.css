@@ -1,0 +1,145 @@
+body {
+	background-color: #B7B7B7;
+	font-family: 'Roboto', sans-serif;
+	direction: ltr;
+}
+
+.signin {
+	font-size: 17px;
+}
+
+.fa-brands {
+	font-size: 22px;
+	padding: 4px;
+	margin: 9px;
+}
+
+.register {
+	text-align: center;
+	width: 50%;
+	margin: auto;
+	padding: 70px 0;
+}
+
+input[type=text],input[type=password] {
+	width: 65%;
+	margin: auto;
+	padding: 15px 5px;
+	margin: 8px 0px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	background-color: #b7b7b7;
+	border-color: transparent transparent #333 transparent;
+}
+
+input[type=submit] {
+	width: 70%;
+	margin: 9px;
+	padding: 12px 20px;
+	background-color: #6f9eed;
+	border-color: transparent;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
+input[value] {
+	font-size: 18px
+}
+
+input[type=submit]:hover {
+	opacity: 0.9;
+}
+
+.loginhere {
+	font-size: 20px;
+}
+
+h1 {
+	text-align: center;
+	color: black;
+	font-size: 50px;
+    text-transform: uppercase;
+    text-align: center; 
+	width: 50%;
+	padding: 23px;
+	margin: auto;
+	margin-bottom: 20px;
+    text-shadow: 0px 1px 0px #f2f2f2;
+	text-decoration: underline;
+}
+
+table {
+	text-align: center;
+	width: 100%;
+}
+
+.table-center {
+	width: 50%;
+	margin: auto;
+}
+
+table, th, td {
+	border:1px solid black;
+	border-collapse: collapse;
+}
+
+th , td {
+	padding: 7px;
+	height: 90px;
+}
+
+tr:hover {
+	background-color: rgb( 245 255 255 / 15%);
+}
+
+.arrow , border {
+	position: relative;
+}
+
+.arrow::before {
+	content: "";
+    position: absolute;
+	text-align: center;
+    top: 40%;
+	left: 5px;
+    margin-top: -5px;
+	border-style: solid;
+    border-width: 15px;
+    border-color: transparent #696969 transparent transparent;
+}
+
+.arrow::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 70%;
+    right: 25px;
+    top: 15%;
+    background-color: #696969
+}
+
+fieldset {
+	border-radius: 8px;	
+	width: 50%;
+	margin: auto;
+	color: black;
+}
+
+legend {
+	margin: 2.5px
+}
+
+.fa-regular {
+    font-weight: 500;
+    padding: 30px;
+    margin: 0px;
+    border-style: solid;
+	border-width: 2px;
+    border-radius: 50%;
+    border-color: #696969;
+}
+
+.fa-user {
+	color: #696969;
+	font-size: 40px;
+}
