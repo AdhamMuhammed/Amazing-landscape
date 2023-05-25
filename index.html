@@ -8,7 +8,7 @@
 		<meta name="author" content="Adham Muhammed"/>
 		<title>Beautiful landscape</title>
 		<!--My css-->
-		<link rel="stylesheet" href="CSS/style.css">
+		<link rel="stylesheet" href="CSS/css.css">
 		<!--Icons-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 		<!--Fonts-->
@@ -26,7 +26,7 @@
 			<a href="login.html" target="_blank" class="a">Login & Sign up</a>
 			<a href="#news" target="_blank" class="a">News</a>
 			<a href="visitors.html" target="_blank" class="a">Visitors</a>
-			<a class="float-right" href="#About">About</a>
+			<a href="#About" class="float-right">About</a>
 		</div>
 
 		<br><br><br>
@@ -36,7 +36,9 @@
 
 		<!--<p class="pblack"> <small> <b> A beautiful landscape </b> </small> </p>-->
 
-		<img src="https://c0.wallpaperflare.com/preview/61/759/635/lake-water-mountains-landscape.jpg" alt="landscape" title="amazing!" class="imgg"><br><br>
+		<img src="https://c0.wallpaperflare.com/preview/61/759/635/lake-water-mountains-landscape.jpg" alt="landscape" title="beautiful!" class="imgg"><br>
+		
+		<h2>What a beautiful landscape!</h2>
 
 			<!--HTML style for specific elements to not to change its properties in css file beacuse it is strong but you can identify it by using class or id-->
 			<!--O<sub>2 = oxygen symbol</sub>-->
@@ -45,16 +47,16 @@
 
 		<form name="rate">
 			<fieldset>
-				<div>Rate the landscape</div>
+				<div class="rate-form">Rate the landscape</div>
 				<input class="ag" type="radio" name="rate"><label class="agg">Beautiful <i class="fa-solid fa-star"></i></label><br><br>
 				<input class="nb" type="radio" name="rate"><label class="nbb">hah..not bad <i class="fa-regular fa-star-half-stroke"></i></label><br><br>
 				<input class="wl" type="radio" name="rate"><label class="wll">worst landscape i have ever seen <i class="fa-regular fa-star"></i></label><br><br>
 				<hr class="hr">
-				<label class="btod">Comment here &#58;</label>
+				<label class="rate-form1">Comment here &#58;</label>
 				<div class="textareaclass">
 					<textarea rows="2" cols="50" maxlength="50"  placeholder="descripe here"></textarea><br>
 				</div>
-				<label class="btubl">Upload a landscape (optional)</label>	<input type="file">
+				<label class="rate-form1">Upload a landscape (optional)</label>	<input type="file">
 				<div class="st">
 					<input type="Submit" value="Submit"><br>
 				</div>
@@ -63,7 +65,7 @@
 
 		<br>
 
-		<span class="center-after">&nbsp;&nbsp;&nbsp;&nbsp; after we looked at this beautiful landscape , now you can download it!</span><br>
+		<span class="center-after">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; after we looked at this beautiful landscape , now you can download it!</span><br>
 
 		<div class="imgs">
 			<div class="btn"><a href="https://drive.google.com/file/d/1UVw82qYfl2blP2Z45JyCH6DwZWMCBGZb/view?usp=sharing" target="_blank"> <span class="fa-regular fa-circle-down"> <span downloadfont>HD+ Download</span></span></a></div>
@@ -71,9 +73,11 @@
 			<div class="btn"><a href="https://drive.google.com/file/d/1-nHpgsDDf6nys6W3M1WqCVH2lwzKeu7R/view?usp=sharing" target="_blank"> <span class="fa-regular fa-circle-down"> <span downloadfont>QHD Download</span></span></a></div>
 		</div>
 
-		<br> 
-		<div class="about">
-			<span class="about2">&ldquo;About Adham&rdquo;</span>
+		<br>
+		<div id="About">
+			<div class="about">
+				<span class="about2">&ldquo;About Adham&rdquo;</span>
+			</div>
 		</div>
 		<ol class="pipe"> 
 			<li> This is <span class="Adham">Adham</span> first website by the way and it have been created in <ins>Sun 12<sup>th</sup> Mar 2023</ins> </li>

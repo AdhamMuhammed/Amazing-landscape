@@ -63,6 +63,7 @@ border-box will respect the width and hight that i selected
 
 div a.float-right {
 	float: right;
+	cursor: pointer;
 }
 
 
@@ -77,6 +78,17 @@ h1 {
     text-shadow: 0px 1px 0px #f2f2f2;
 }
 
+h2 {
+	color: black;
+    font-size: 27px;  
+    text-align: center; 
+	width: 30%;
+	padding: 25px;
+	margin: auto;
+	margin-bottom: 30px;
+    text-shadow: 0px 1px 0px #f2f2f2;
+}
+
 ol {
 	width: 50%;
 	margin: auto;
@@ -88,12 +100,6 @@ ol li {
 	font-weight: bold;
 	font-size: 32px;
 	display: inline;
-}
-
-p {
-	padding: 15px;
-	text-align: center;
-	font-size: 30px;
 }
 
 .imgg {
@@ -189,7 +195,7 @@ textarea {
 }
 
 span.fa-regular {
-	background-color: #696969;
+	background-color: #333;
 	color: white;
 	text-align: center;
     border: 0px solid #696969;
@@ -204,6 +210,8 @@ span.fa-regular {
 
 .fa-circle-down:hover {
 	color: #6f9eed;
+	opacity: 0.9;
+	transition-duration: 0.2
 }
 
 .btn {
@@ -228,7 +236,7 @@ span.fa-regular {
 .center-after {
 	text-align: center;
 	padding: 10px;
-	font-size: 30px;
+	font-size: 28px;
 	display: block;
 	position: relative;
 	margin: 10px 0 0 0
@@ -253,18 +261,12 @@ input[type=submit] {
 	cursor: pointer;
 }
 
- .btod , .btubl {
-	/*background-color: #696969;
-    border: 0px solid #696969;
-    border-radius: 30px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: 8px;
-	color: #000;
-	width: 50%;
-	margin: auto;*/
+input[type=submit]:hover {
+	opacity: 0.8;
+	transition-duration: 0.3s
+}
+
+ .rate-form , .rate-form1 {
 	color: #000;
 	font-weight: bold;
 	font-size: 25px;
@@ -352,8 +354,8 @@ a, span, .social, .social-text, div, .imgg {
     position: absolute;
 	text-align: center;
     top: 40%;
-    margin-top: -5px;
+    margin-top: -8px;
 	border-style: solid;
     border-width: 15px;
-    border-color: transparent #696969 transparent transparent;
+    border-color: transparent #333 transparent transparent;
 }

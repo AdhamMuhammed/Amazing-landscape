@@ -12,6 +12,7 @@ body {
 	font-size: 22px;
 	padding: 4px;
 	margin: 9px;
+	cursor: pointer;
 }
 
 .register {
@@ -49,7 +50,8 @@ input[value] {
 }
 
 input[type=submit]:hover {
-	opacity: 0.9;
+	opacity: 0.8;
+	transition-duration: 0.3s
 }
 
 .loginhere {
