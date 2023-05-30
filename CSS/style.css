@@ -1,6 +1,4 @@
-/* .NAME is the name of the class of any element*/
-/*if you wright padding or margin px1o only it will be padding-bottom padding-left padding-right padding-top
-padding bt3ml ham4 mn ey geha Top right bottom left
+/* .NAME is the name of the class of any element
 CTRL K C = Comment */
 
 body {
@@ -13,57 +11,59 @@ body {
 	margin: 0;
 }
 
+:root {
+	--mainColour :#333;
+	--mainPadding : 8px;
+}
+
 /* ::selection {
 	background-color: darkviolet
 } */
 
 .nav {
-	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #333;
-	position: absolute;
-	padding: 10px;
+	padding: calc(2px + var(--mainPadding));
 	left: 0px;
 	right: 0px;
 	top: 0px;
-	box-shadow: 0 0 4px 0 #000;
+	box-shadow: 0 0 6px 0 #000;
+	margin: 0px 0px 30px 0px;
 }
 
-/*box shadow 
---------------------------------------------------------------
-Horizontal | Vertical | Blur | Spread | Colour | Inset-Outset
---------------------------------------------------------------
-
-box-sizing 
---------------------------------------------------------------
-content-box property will add padding or margin or border to the main content ( element ) width
-
-border-box will respect the width and hight that i selected
---------------------------------------------------------------
-*/
-
-
 .nav a {
-	float: left;
-	overflow: hidden;
-	font-size: 20px;
+	/* width: calc(35% / 5); */
+	font-size: 25px;
 	color: white;
+	padding: 15px 20px;
+	text-decoration: none;
+	border-radius: 15px;
+	
+}
+
+.nav .nav-align {
 	text-align: center;
+	margin: 0px auto 0px 163px;
+}
+
+.nav .beautiful-landscape-left {
+	font-size: 30px;
+	columns: 0;
+	color: #6f9eed;
 	padding: 15px 20px;
 	text-decoration: none;
 	margin-left: 2px;
-	border-radius: 15px;
+	cursor: default;
+	font-family: 'Caveat Brush', cursive;
 }
 
 /* this is a pseudo class with one colon */
 
-.a:hover , .float-right:hover {
+.a:hover , .right:hover {
 	background-color: #6f9eed;
 	transition-duration: 0.9s;
-}
-
-div a.float-right {
-	float: right;
-	cursor: pointer;
 }
 
 
@@ -75,7 +75,7 @@ h1 {
 	padding: 25px;
 	margin: auto;
 	margin-bottom: 20px;
-    text-shadow: 0px 1px 0px #f2f2f2;
+    text-shadow: 0px 0.5px 0px #fff;
 }
 
 h2 {
@@ -105,9 +105,14 @@ ol li {
 .imgg {
 	width: 70%;
 	margin: auto;
-	padding: 5px;
 	display: block;
 	height: 565px;
+	box-shadow: 0 0 8px 0 var(--mainColour);
+}
+
+.imggg {
+	width: 100px;
+	height: 97px;
 }
 
 .imgs {
@@ -124,7 +129,7 @@ fieldset {
     display: block;
     height: auto;
 	border-radius: 19px;
-	border: 1px solid #333;
+	border: 1px solid var(--mainColour , #333);
 }
 
 label {
@@ -299,8 +304,8 @@ input[type=submit]:hover {
 }
 
 .input-size {
-	padding: 8px;
-	margin: 8px
+	padding: var(--mainPadding);
+	margin: 8px;
 }
 
 a {
