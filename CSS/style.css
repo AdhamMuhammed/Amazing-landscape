@@ -13,7 +13,7 @@ body {
 
 :root {
 	--mainColour :#333;
-	--mainPadding : 8px;
+	--mainPadding : 5px;
 }
 
 /* ::selection {
@@ -22,10 +22,9 @@ body {
 
 .nav {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	background-color: #333;
-	padding: calc(2px + var(--mainPadding));
+	padding: var(--mainPadding);
 	left: 0px;
 	right: 0px;
 	top: 0px;
@@ -40,19 +39,18 @@ body {
 	padding: 15px 20px;
 	text-decoration: none;
 	border-radius: 15px;
-	
 }
 
 .nav .nav-align {
+	margin: 0px 0px 0px auto;
 	text-align: center;
-	margin: 0px auto 0px 163px;
 }
 
 .nav .beautiful-landscape-left {
 	font-size: 30px;
 	columns: 0;
 	color: #6f9eed;
-	padding: 15px 20px;
+	padding: 15px 0px;
 	text-decoration: none;
 	margin-left: 2px;
 	cursor: default;
@@ -156,49 +154,6 @@ textarea {
 	margin: 8px;
 }
 
-.Adham {
-	font-weight: bold;
-}
-
-.about2 {
-	text-align: center;
-	margin: auto;
-	width: 50%;
-}
-
-.about {
-	color: black;
-	font-weight: bold;
-	padding: 12px;
-}
-
-.fa-facebook , .fa-snapchat , .fa-whatsapp {
-	color: whitesmoke;
-	box-shadow: 0 0 9px 0 #000;
-}
-
-.fa-facebook {
-	background-color: #3B5998;
-	font-family: 'Roboto', sans-serif;
-}
-
-.fa-whatsapp {
-	background-color: #25d366;
-	font-family: 'Roboto', sans-serif;
-}
-
-.fa-snapchat {
-	background-color: #FFFC00;
-	font-family: 'Roboto', sans-serif;
-}
-
-.fa-brands {
-	padding: 15px;
-    margin: 10px;
-    border-radius: 8%;
-	/*width: 180px;*/
-	font-family: 'Roboto', sans-serif;
-}
 
 span.fa-regular {
 	background-color: #333;
@@ -227,11 +182,6 @@ span.fa-regular {
 	text-align: center;
 }
 
-.pblack {
-	margin: auto;
-	color: black
-}
-
 .download {
 	font-weight: bold;
 	color: white;
@@ -248,9 +198,9 @@ span.fa-regular {
 	margin: 10px 0 0 0
 }
 
-/* .center-after::first-letter { */
-	/* font-weight: bold; */
-/* } */
+/* .center-after::first-letter {
+	font-weight: bold;
+}*/
 
 .opinion-descripe {
 	text-align: center;
@@ -279,18 +229,6 @@ input[type=submit]:hover {
 	margin: 7px;
 }
 
-.copyright {
-	font-size: 20px;
-    display: block;
-    text-align: center;
-    background-color: #333;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-	padding: 9px;
-    box-shadow: 0 0 4px 0 #000;
-}
-
 .copyright::before {
 	content: "";
 	width: 10px;
@@ -300,11 +238,11 @@ input[type=submit]:hover {
 /* this is a pseudo element with two colons */
 
 .copyright::first-line {
-	color: white;
+	color: #999;
 }
 
 .input-size {
-	padding: var(--mainPadding);
+	padding: var(--mainPadding + 3px);
 	margin: 8px;
 }
 
@@ -313,14 +251,7 @@ a {
 	text-shadow: 0px 1px 0px white;
 }
 
-.social {
-	display: block;
-	text-align: center;
-	width: 50%;
-	margin: auto;
-}
-
-a, span, .social, .social-text, div, .imgg {
+a, span, .social, div, .imgg {
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 }
@@ -364,4 +295,78 @@ a, span, .social, .social-text, div, .imgg {
 	border-style: solid;
     border-width: 15px;
     border-color: transparent #333 transparent transparent;
+}
+
+.container {
+	background-color: #333;
+	color: #999;
+	padding: 30px 0;
+	box-shadow: 0 0 4px 0 #000;
+	text-align: center;
+}
+
+.container h5 {
+	color: #bdbdbd;
+	font-size: 18px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.container p {
+	width: 550px;
+	margin: 3px auto 20px auto;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.container .about {
+	width: 550px;
+	margin: 0 auto 20px auto;
+	text-align: center;
+}
+
+.container .email {
+	font-size: 16px;
+	text-align: center;
+}
+
+.container .phonenum {
+	font-size: 16px;
+}
+	
+
+.container div {
+	font-size: 16px;
+	margin-top: 4px;
+}
+
+.social-icons {
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.social-icons a {
+	color: #999;
+	font-size: 22px;
+	display: block;
+	width: 46px;
+	height: 46px;
+	text-align: center;
+	line-height: 46px;
+	border: 2px solid #999;
+	border-radius: 50%;
+}
+
+.social-icons a:hover {
+	color: #fff;
+	background-color: #999;
+	border-color: #999;
+	transition-duration: 0.9s;
 }
