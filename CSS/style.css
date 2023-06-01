@@ -2,19 +2,23 @@
 CTRL K C = Comment */
 
 body {
-	background-color: #B7B7B7;
+	/* background-color: #B7B7B7; */
 	background-attachment: fixed;
 	background-size: 100% 100%;
 	font-size: 28px;
 	font-family: 'Roboto', sans-serif;
 	direction: ltr;
-	margin: 0;
 }
 
+* {
+	margin: 0
+}
+	
 :root {
 	--mainColour :#333;
 	--mainPadding : 5px;
 }
+	
 
 /* ::selection {
 	background-color: darkviolet
@@ -30,6 +34,110 @@ body {
 	top: 0px;
 	box-shadow: 0 0 6px 0 #000;
 	margin: 0px 0px 30px 0px;
+}
+
+/* 				Light Mode				 */
+
+.light {
+	background: #fafafa;
+}
+
+.toggle {
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 120px;
+	height: 60px;
+	border-radius: 50px;
+}
+
+.light .toggle {
+	background-image: linear-gradient(145deg, #e1e1e1, #fff);
+	box-shadow: 1px 1px 3px #e6e6e6,
+				-1px -1px 3px #ffffff;
+}
+
+.light .toggle .bxs-sun {
+	color: #fafafa;
+}
+
+.light .toggle .bx-moon {
+	color: #151d2a;
+}
+
+.toggle i {
+	width: 50%;
+	text-align: center;
+	font-size: 30px;
+	z-index: 1;
+}
+
+.toggle .ball {
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	border-radius: 50%;
+	margin: 7.5px;
+}
+
+.light .toggle .ball {
+	background-color: #151d2a;
+}
+
+.input-toggle {
+	display: none;
+}
+
+/*				 Dark Mode 				*/
+
+.dark {
+	background: #151d2a;
+}
+
+.toggle {
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 120px;
+	height: 60px;
+	border-radius: 50px;
+}
+
+.dark .toggle {
+	background-image: #151d2a;
+	box-shadow: 1px 1px 2px 0e131b,
+				-1px -1px 2px #1c2739;
+}
+
+.dark .toggle .bx-sun {
+	color: #fafafa;
+}
+
+.dark .toggle .bxs-moon {
+	color: #151d2a;
+}
+
+.toggle i {
+	width: 50%;
+	text-align: center;
+	font-size: 30px;
+	z-index: 1;
+}
+
+.toggle .ball {
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	border-radius: 50%;
+	margin: 7.5px;
+}
+
+.dark .toggle .ball {
+	background-color: #fafafa;
 }
 
 .nav a {
@@ -130,7 +238,7 @@ fieldset {
 	border: 1px solid var(--mainColour , #333);
 }
 
-label {
+.agg , .nbb , .wll {
 	text-align: center;
 	width: 50%;
 	padding: 5px;

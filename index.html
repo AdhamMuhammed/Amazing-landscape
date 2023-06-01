@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="CSS/style.css">
 		<!--Icons-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
 		<!--Fonts-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +22,15 @@
 		<script>
 		</script>
 	</head>
-	<body>
+	<body class="light">
 		<div class="nav">
 			<img src="images/Logo.png" class="imggg"><div class="beautiful-landscape-left">BEAUTIFUL LANDSCAPE</div>
+			<input type="checkbox" id="toggle" class="input-toggle">
+			<label class="toggle" for="toggle">
+				<i class="bx bxs-sun"></i>
+				<i class="bx bx-moon"></i>
+				<span class="ball"></span>
+			</label>
 			<div class="nav-align">
 				<a href="login.html" target="_blank" class="a">Login & Sign up</a>
 				<a href="#news" target="_blank" class="a">News</a>
@@ -51,7 +58,7 @@
 				<hr class="hr">
 				<label class="rate-form1">Descripe the landscape &#58;</label>
 				<div class="textareaclass">
-					<textarea rows="2" cols="50" maxlength="50"  placeholder="descripe here"></textarea><br>
+					<textarea rows="2" cols="50" maxlength="50"  placeholder="Descripe here"></textarea><br>
 				</div>
 				<label class="rate-form1">Upload a landscape (optional)</label>	<input type="file">
 				<div class="st">
