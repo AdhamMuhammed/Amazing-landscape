@@ -15,8 +15,9 @@ body {
 }
 	
 :root {
-	--mainColour :#333;
-	--mainPadding : 5px;
+	--mainColour:#333;
+	--mainPadding: 5px;
+	--mainFont: 20px;
 }
 	
 
@@ -27,11 +28,10 @@ body {
 .nav {
 	display: flex;
 	align-items: center;
+	/*position: sticky;
+	z-index: 1;*/
 	background-color: #333;
 	padding: var(--mainPadding);
-	left: 0px;
-	right: 0px;
-	top: 0px;
 	box-shadow: 0 0 6px 0 #000;
 	margin: 0px 0px 30px 0px;
 }
@@ -142,11 +142,16 @@ body {
 
 .nav a {
 	/* width: calc(35% / 5); */
-	font-size: 25px;
+	font-size: 23px;
 	color: white;
-	padding: 15px 20px;
+	padding: 14px 21px;
 	text-decoration: none;
-	border-radius: 15px;
+	border-radius: 21px;
+	transition-duration: 0.5s;
+}
+
+.nav .right {
+	margin-right: 5px;
 }
 
 .nav .nav-align {
@@ -155,12 +160,10 @@ body {
 }
 
 .nav .beautiful-landscape-left {
-	font-size: 30px;
+	font-size: 28px;
 	columns: 0;
 	color: #6f9eed;
-	padding: 15px 0px;
-	text-decoration: none;
-	margin-left: 2px;
+	margin-left: 4px;
 	cursor: default;
 	font-family: 'Caveat Brush', cursive;
 }
@@ -169,13 +172,12 @@ body {
 
 .a:hover , .right:hover {
 	background-color: #6f9eed;
-	transition-duration: 0.9s;
 }
 
 
 h1 {
 	color: black;
-    font-size: 35px;  
+    font-size: 29px;  
     text-align: center; 
 	width: 30%;
 	padding: 25px;
@@ -209,10 +211,10 @@ ol li {
 }
 
 .imgg {
-	width: 70%;
+	width: 65%;
 	margin: auto;
 	display: block;
-	height: 565px;
+	height: 500px;
 	box-shadow: 0 0 8px 0 var(--mainColour);
 }
 
@@ -273,19 +275,18 @@ span.fa-regular {
     padding-bottom: 16px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-left: 8px;
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 }
 
 .fa-circle-down:hover {
 	color: #6f9eed;
 	opacity: 0.9;
-	transition-duration: 0.2
 }
 
 .btn {
-	padding: 12px 30px;
-	font-size: 23px;
+	width: 42%;
+	padding: 12px 0;
+	font-size: var(--mainFont);
 	margin: auto;
 	text-align: center;
 }
@@ -299,8 +300,8 @@ span.fa-regular {
 
 .center-after {
 	text-align: center;
-	padding: 10px;
-	font-size: 28px;
+	padding: 13px;
+	font-size: 27px;
 	display: block;
 	position: relative;
 	margin: 10px 0 0 0
@@ -323,11 +324,11 @@ input[type=submit] {
 	border-radius: 7px;
 	box-shadow: 0 0 2.5px 0 #000;
 	cursor: pointer;
+	transition-duration: 0.3s;
 }
 
 input[type=submit]:hover {
 	opacity: 0.8;
-	transition-duration: 0.3s
 }
 
  .rate-form , .rate-form1 {

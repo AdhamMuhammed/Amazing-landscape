@@ -1,5 +1,5 @@
 body {
-	background-color: #B7B7B7;
+	background-color: #fafafa;
 	font-family: 'Roboto', sans-serif;
 	direction: ltr;
 }
@@ -29,7 +29,7 @@ input[type=text],input[type=password] {
 	margin: 8px 0px;
 	display: inline-block;
 	border: 1px solid #333;
-	background-color: #b7b7b7;
+	background-color: #fafafa;
 	outline: none;
 	border-color: transparent transparent #333 transparent;
 }
@@ -43,6 +43,7 @@ input[type=submit] {
 	border-radius: 7px;
 	cursor: pointer;
 	box-shadow: 0 0 3px 0 #000;
+	transition-duration: 0.3s
 }
 
 input[value] {
@@ -51,7 +52,6 @@ input[value] {
 
 input[type=submit]:hover {
 	opacity: 0.8;
-	transition-duration: 0.3s
 }
 
 .loginhere {
@@ -73,11 +73,13 @@ h1 {
 }
 
 table {
-	text-align: center;
 	width: 100%;
+	text-align: center;
 }
 
 .table-center {
+	display: flex;
+	justify-content: center;
 	width: 50%;
 	margin: auto;
 }
